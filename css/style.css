@@ -1,0 +1,137 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(237, 106, 106);
+}
+
+h1{
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.top-box{
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.row::after,
+.bottom-box::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.third{
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+label{
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+input, input:hover, input:active, input:focus,
+select, select:hover, select:active, select:focus{
+  border: 2px solid rgb(237, 106, 106);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+input:focus,
+select:focus{
+  background-color: rgb(237, 106, 106);
+  color: white;
+}
+
+input::placeholder{
+  text-align: center;
+}
+
+select{
+  text-align: center;
+}
+
+.half{
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+
+.half:last-child{
+  text-align: left;
+}
+
+.btn{
+  padding: 10px;
+  margin: 20px;
+  color: rgb(237, 106, 106);
+  border: 2px solid rgb(237, 106, 106);
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.btn:hover{
+  color: lightgrey;
+  border: 2px solid lightgrey;
+  background-color: rgb(237, 106, 106);
+}
+
+#bottom-box{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+#bottom-box h4{
+  margin-bottom: 10px;
+}
+
+#bottom-box .first{
+  width: 30%;
+  padding: 20px;
+  display: inline-block;
+  background-color: lightgrey;
+}
+
+#bottom-box .second{
+  float: right;
+  width: 70%;
+  padding: 20px;
+}
+
+table{
+  width: 100%;
+}
+
+#offerta,
+#carrozza,
+#cp,
+#costo{
+  font-weight: normal;
+}
+
+.show{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
